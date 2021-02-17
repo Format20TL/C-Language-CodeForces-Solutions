@@ -1,0 +1,36 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+ 
+ 
+/* run this program using the console pauser or add your own getch, system("pause") or input loop */
+ 
+ 
+int main(int argc, char *argv[]) {
+	char nick[100];
+	int same=0;
+	scanf("%s",&nick);
+	
+	for(int i =0;i<strlen(nick);i++)
+	{
+		for( int j =0;j<strlen(nick);j++)
+		{
+			if(nick[i]==nick[j]&&j!=i&&nick[i]!=0)
+			{
+				nick[i]='0';
+				same++;
+			}
+		}
+	}
+	
+	
+	if((strlen(nick)-same)%2==0)
+	{
+		printf("CHAT WITH HER!");
+	}
+	else
+	{
+		printf("IGNORE HIM!");
+	}
+	return 0;
+}
