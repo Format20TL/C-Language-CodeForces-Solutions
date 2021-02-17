@@ -5,18 +5,18 @@
 /* run this program using the console pauser or add your own getch, system("pause") or input loop */
  
 int main(int argc, char *argv[]) {
-	int line,one,second,third,count;
+	int line,first,second,third,count;
 	count =0;
 	scanf("%d",&line);
 	
 	
 	for(int i =1;i<=line;i++)
 	{
-		scanf("%d",&one);
+		scanf("%d",&first);
 		scanf("%d",&second);
 		scanf("%d",&third);
 		
-		if(one+second+third>=2)
+		if(first+second+third>=2)
 		{
 			count++;
 		}
