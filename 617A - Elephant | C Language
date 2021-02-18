@@ -1,0 +1,51 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+
+/* run this program using the console pauser or add your own getch, system("pause") or input loop */
+
+ 
+int main(int argc, char *argv[]) {
+	int cor,step=0;
+	scanf("%d",&cor);
+	
+	while(cor>0)
+	{
+		if(cor>=5)
+	{
+		cor -=5;
+		
+	}
+	else if(cor >=4)
+	{
+		cor -=4;
+		
+	}
+	else if(cor >=3)
+	{
+		cor -=3;
+		
+	}
+	else if(cor >=2)
+	{
+		cor -=2;
+		
+	}
+	else
+	{
+		cor--;
+		
+		
+	}
+	
+	step++;
+	
+	
+	}
+	printf("%d",step);
+	
+			
+	
+	
+	return 0;
+}
