@@ -1,0 +1,33 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+ 
+ 
+/* run this program using the console pauser or add your own getch, system("pause") or input loop */
+ 
+ 
+int main(int argc, char *argv[]) {
+	int k,n,w=0;
+	int price=0;
+	
+	scanf("%d %d %d",&k,&n,&w);
+	
+	for(int i =0;i<=w;i++)
+	{
+		price +=k*i;
+	}
+	
+	if(price>n)
+	{
+		printf("%d",price-n);
+	}
+	else{
+		printf("0");
+	}
+	
+	
+	
+	
+	
+	return 0;
+}
