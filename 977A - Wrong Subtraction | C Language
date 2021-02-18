@@ -1,0 +1,34 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+
+ 
+/* run this program using the console pauser or add your own getch, system("pause") or input loop */
+ 
+ 
+int main(int argc, char *argv[]) {
+	int number,subs;
+	
+	scanf("%d %d",&number,&subs);
+	
+	for(int i =0;i<subs;i++)
+	{
+		if(number%10==0)
+		{
+			number=number/10;
+		}
+		else{
+			number -=1;
+		}
+	}
+	
+	printf("%d",number);
+	
+	
+	
+	
+	
+	
+	
+	return 0;
+}
