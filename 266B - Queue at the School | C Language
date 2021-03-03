@@ -1,0 +1,35 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+
+int main(int argc, char *argv[]) {
+	int sCount,time=0;
+	char tmp;
+	char queue[50];
+	scanf("%d",&sCount);
+	scanf("%d",&time);
+	scanf("%s",&queue);
+	
+	for(int k =0;k<time;k++)
+	{
+		
+		for(int i=0;i<strlen(queue);i++)
+	    {
+		if(queue[i]=='B'&&queue[i+1]=='G')
+		{
+			tmp=queue[i];
+			queue[i]=queue[i+1];
+			queue[i+1]=tmp;
+			i++;
+			
+			
+		}
+	    }
+	}
+	printf("%s",queue);
+	
+
+	
+	return 0;
+}
