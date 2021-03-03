@@ -1,0 +1,34 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+
+
+int main(int argc, char *argv[]) {
+	
+	int lucky=0;
+	char number[20];
+	scanf("%s",number);
+	
+	for(int i =0;i<strlen(number);i++)
+	{
+		if(number[i]=='7' || number[i]=='4')
+		{
+			lucky++;
+		}
+	}
+	
+	if(lucky==7 || lucky ==4)
+	{
+		printf("YES");
+	}
+	else
+	{
+		printf("NO");
+	}
+	
+	
+	
+	
+	return 0;
+}
