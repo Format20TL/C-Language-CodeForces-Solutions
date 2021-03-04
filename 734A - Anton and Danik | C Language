@@ -1,0 +1,42 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+
+int main(int argc, char *argv[]) {
+	
+	int numberGame;
+	int numberWon=0;
+	
+	
+	scanf("%d",&numberGame);
+	char game[numberGame];
+	scanf("%s",game);
+	
+	
+	for(int i=0;i<strlen(game);i++)
+	{
+		if(game[i]=='A')
+		{
+			numberWon++;
+		}
+	}
+	
+	if(numberWon>strlen(game)-numberWon)
+	{
+		printf("Anton");
+	}
+	else if(numberWon==strlen(game)-numberWon)
+	{
+		printf("Friendship");
+	}
+	else
+	{
+		printf("Danik");
+	}
+	
+
+	
+	
+	return 0;
+}
