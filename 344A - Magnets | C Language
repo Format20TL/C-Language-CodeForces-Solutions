@@ -1,0 +1,28 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+
+int main(int argc, char *argv[]) {
+	int magnets;
+	int group=1;
+	
+	scanf("%d",&magnets);
+	int magArray[magnets];
+	for(int i =0;i<magnets;i++)
+	{
+		scanf("%d",&magArray[i]);
+	}
+	
+	for(int i =0;i<magnets-1;i++)
+	{
+		if(magArray[i]!=magArray[i+1])
+		{
+			group+=1;
+		}
+	}
+	
+		printf("%d",group);
+	
+	return 0;
+}
