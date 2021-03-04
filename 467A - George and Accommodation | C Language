@@ -1,0 +1,27 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+ 
+ 
+int main(int argc, char *argv[]) {
+	
+	int numberOfRooms;
+	int p,q;
+	int canMove=0;
+	scanf("%d",&numberOfRooms);
+	
+	for(int i =0;i<numberOfRooms;i++)
+	{
+		scanf("%d %d",&p,&q);
+		if(q-p>=2)
+		{
+			canMove++;
+		}
+	}
+	printf("%d",canMove);
+	
+	
+	
+	
+	return 0;
+}
