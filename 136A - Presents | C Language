@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+
+int main(int argc, char *argv[]) {
+	int friends;
+	int number;
+	
+	scanf("%d",&friends);
+	int arr[friends];
+	
+	for(int i =1;i<=friends;i++)
+	{
+		scanf("%d",&number);
+		arr[number-1]=i;
+	}
+	for(int i =0;i<friends;i++)
+	{
+		printf("%d ",arr[i]);
+	}
+	
+	
+
+	return 0;
+}
