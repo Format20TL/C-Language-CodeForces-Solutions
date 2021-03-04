@@ -1,0 +1,34 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+ 
+ 
+int main(int argc, char *argv[]) {
+	
+	int year;
+	int firstD;
+	int secondD;
+	int thirdD;
+	int forthD;
+	
+	scanf("%d",&year);
+	
+	while(1)
+	{
+		year++;
+		firstD=year/1000;
+		secondD=year/100%10;
+		thirdD=year/10%10;
+		forthD=year%10;
+		if(firstD!=secondD&& secondD!=thirdD&& thirdD!=forthD&&thirdD!=firstD&&forthD!=firstD&&firstD!=secondD&&secondD!=forthD)
+		{
+			printf("%d",year);
+			break;
+		}
+		
+	}
+	
+	
+
+	return 0;
+}
